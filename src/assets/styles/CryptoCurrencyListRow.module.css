@@ -1,0 +1,71 @@
+.currency_row{
+    background-color: var(--normal-white);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    margin-bottom: 4px;
+    border: 1px solid var(--normal-white);
+    cursor: pointer;
+}
+
+.currency_row:hover{
+    border: 1px solid rgb(149, 149, 149);
+}
+
+.currency_row_leftSection{
+    display: flex;
+    align-items: flex-start;
+}
+
+.currency_row_leftSection > span{
+    font-size: 0.8rem;
+    margin-right: 5px;
+    background-color: var(--normal-white);
+    color: var(--text-normal-color);
+    margin-left: 0px;
+}
+
+.currency_row_title{
+    margin-bottom: 5px;
+    color: var(--text-normal-color);
+}
+
+.currency_row_symbol{
+    color: var(--text-normal-color);
+}
+
+.currency_row_price{
+    margin-bottom: 5px;
+    text-align: end;
+    color: var(--normal-black);
+
+}
+
+.currency_row_change{
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    color: var(--text-normal-color)
+}
+
+/* .currency_row_change_red{
+    color: var(--principal-red)
+}
+
+.currency_row_change_green{
+    color: var(--principal-green)
+} */
+
+.indicative{
+    background-color: rgb(202, 202, 202);
+    padding: 4px;
+    font-size: 0.6rem;
+    border-radius: 2px;
+    color: var(--normal-white);
+    margin-left: 3px;
+
+}

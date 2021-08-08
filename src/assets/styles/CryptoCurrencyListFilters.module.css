@@ -1,0 +1,68 @@
+
+.currencyList_filtersContainer{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* SEARCHER */
+.currencyList_searcher{
+    display: flex;
+    padding: 6px 15px;
+    background-color: white;
+    border-radius: 8px;
+    width: 250px;
+    border-right: 1px solid rgb(231, 231, 231);
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.currencyList_searcher_input{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.currencyList_searcher_icon{
+    color: rgb(53, 52, 52);
+    cursor: pointer;
+}
+
+/* FILTER */
+.currencyList_filters{
+    display: flex;
+    align-items: center;
+
+}
+
+.currencyList_filterTagActive{
+    background-color: #cfe2ff;
+    border: 1px solid #b6d4fe;
+    border-radius: 20px;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    color: #084298;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.currencyList_filterTag{
+    background-color: #e2e3e5;
+    border: 1px solid #d3d6d8;
+    border-radius: 20px;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    color: #41464b;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.arrow_green{
+    color: var(--principal-green);
+}
+
+.arrow_gray{
+    color: var(--text-normal-color)
+}

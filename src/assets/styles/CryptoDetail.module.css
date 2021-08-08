@@ -1,0 +1,74 @@
+.cryptoDetail_mainContainer{
+    background-color: var(--normal-white);
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.cryptoDetail_titleContainer{
+    display: flex;
+    align-items: center;
+}
+
+.cryptoDetail_title{
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--normal-black)
+}
+
+.cryptoDetail_rank{
+    padding:  3px 10px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 4px;
+    font-size: 1.3rem;
+    color: var(--normal-white);
+    margin-right: 5px;
+}
+
+.cryptoDetail_symbol{
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+.cryptoDetail_price{
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cryptoDetail_section{
+    margin-bottom: 20px;
+}
+
+.cryptoDetail_sectionTitle{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.cryptoDetail_section > p{
+    font-size: 1.8rem;
+}
+
+.cryptoDetail_gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cryptoDetail_gridContainersubtitle{
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+}
+
+.cryptoDetail_gridContainerPrice{
+    font-size: 1.2rem;
+}
+
+hr{
+    border: 1px solid var(--border-color-grey);
+    width: 20px;
+}

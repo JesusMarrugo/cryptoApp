@@ -1,0 +1,44 @@
+.general_market_info_container{
+    background-color: var(--normal-white);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px auto;
+}
+
+.general_market_info_title{
+    font-weight: 500;
+}
+
+.general_market_info_detailContainer{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.4fr;
+    margin-top: 20px;
+}
+
+.general_market_info_detail{
+    margin-right: 30px;
+}
+
+.general_market_info_subtitle{
+    font-size: 0.8rem;
+    color: var(--text-normal-color);
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.general_market_info_number{
+    font-size: 1.2rem;
+    color: var(--normal-black);
+}
+
+@media (max-width: 650px){
+    .general_market_info_detailContainer{
+        flex-direction: column;
+    }
+
+    .general_market_info_detail{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
