@@ -1,12 +1,13 @@
-import React from 'react'
+/**
+ * component of type page or container corresponding to the /detail path
+ */
 import { CryptoDetail } from '../components/CryptoCurrencyDetail/CryptoDetail'
 
+export const CryptoCurrencyDetail= () => {
 
-export const CryptoCurrencyDetail = () => {
     return (
        <>
-        <CryptoDetail />
-       
+        <CryptoDetail />    
        </>
     )
 }

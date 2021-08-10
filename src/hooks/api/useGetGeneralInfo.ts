@@ -1,3 +1,9 @@
+/**
+ * hook that makes a request to the api using the getData() method
+ * 
+ * @returns {Object} If the request is successful, it returns an object with the 
+ * cryptocurrency market general info, if it is wrong, it returns an object with a variable error true
+ */
 import {useState, useEffect} from 'react'
 import {getData} from '../../services/getData'
 import {generalInfo} from '../../interfaces/GeneralInfo'
@@ -16,9 +22,6 @@ export const useGetGeneralInfo = () => {
         loading: true, 
         error: null
     })
-
-
-
 
     useEffect(() => {
         getData('https://api.coinlore.net/api/global/')

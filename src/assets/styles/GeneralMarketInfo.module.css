@@ -12,7 +12,7 @@
 .general_market_info_detailContainer{
     /* display: flex; */
     display: grid;
-    grid-template-columns: 1fr 1fr 0.4fr;
+    grid-template-columns: 0.8fr 0.8fr 0.4fr;
     margin-top: 20px;
 }
 

@@ -1,4 +1,6 @@
-import React from 'react';
+/**
+ * high order component that handles the routes
+ */
 import '../assets/styles/globalStyles.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Layout } from '../components/general/Layout';
@@ -11,9 +13,9 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Switch>
-            <Route exact path="/detail/:id" component={CryptoCurrencyDetail} />
-            <Route path="/" component={Home} />
-            
+            {/* <Route exact path="/detail/:id" component={CryptoCurrencyDetail} /> */}
+            <Route exact path="/detail/" component={CryptoCurrencyDetail} />
+            <Route path="/" component={Home} />      
           </Switch>
         </Layout>
       </BrowserRouter>

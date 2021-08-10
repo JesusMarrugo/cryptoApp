@@ -1,3 +1,6 @@
+/**
+ cryptocurrency list searcher, search by cryptocurrency name
+ */
 import React, { useState, useEffect } from 'react'
 import styles from '../../assets/styles/CryptoCurrencyListFilters.module.css'
 import { crypto } from '../../interfaces/Crypto'

@@ -1,4 +1,9 @@
-
+/**
+ * This method sorts a list of objects of type Crypto according to a property 
+ * corresponding to a field of the object, you can order from highest to lowest or from lowest to highest
+ * @param {<orderListI>}
+ * @returns {Array} a list ordered according to the parameters entered
+ */
 import { crypto } from '../interfaces/Crypto'
 
 interface orderListI {
@@ -12,9 +17,6 @@ interface orderListI {
 export const orderList = ({data, property, setPropertyFilter, filterIndex, setFilterIndex}: orderListI) => {
 
  
-
-
-
     const dynamicSort = (property:string) => {
         setPropertyFilter(property)
         return function (a: crypto, b: crypto) {
@@ -46,9 +48,5 @@ export const orderList = ({data, property, setPropertyFilter, filterIndex, setFi
 
     const result = data.sort(dynamicSort(property))
     return result
-
-
-
   
-   
 }

@@ -1,3 +1,7 @@
+/**
+ * shows three tags to sort the list of cryptocurrencies according 
+ * to the marketCap, the price or the change in one day
+ */
 import React, { useState } from 'react'
 import styles from '../../assets/styles/CryptoCurrencyListFilters.module.css'
 import { crypto } from '../../interfaces/Crypto'
@@ -46,9 +50,7 @@ export const OrderTags: React.FC<filterPros> = ({ data, setCryptos }) => {
                     <span className={styles.arrow_gray}>&#8595;</span>
                 </div>
             )
-        }
-
-                
+        }             
     }
 
 

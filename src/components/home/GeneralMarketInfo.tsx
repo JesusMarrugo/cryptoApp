@@ -1,4 +1,7 @@
-import React from 'react'
+/**
+ * shows information of the general market of cryptocurrencies, 
+ * obtains the data from the hook useGetGeneralInfo()
+ */
 import styles from '../../assets/styles/GeneralMarketInfo.module.css'
 import {Caret} from '../general/Caret'
 import { useGetGeneralInfo } from '../../hooks/api/useGetGeneralInfo'

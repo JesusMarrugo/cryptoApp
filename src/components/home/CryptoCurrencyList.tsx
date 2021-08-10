@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from 'react'
+/**
+ * show the list of cryptocurrencies and some filters, get the information with the useGetCryptoList() hook
+ */
+import { useState, useEffect } from 'react'
 import { CryptoCurrencyListRow } from '../home/CryptoCurrencyListRow'
 import { useGetCryptoList } from '../../hooks/api/useGetCryptoList'
 import { crypto } from '../../interfaces/Crypto'
@@ -12,26 +15,22 @@ export const CryptoCurrencyList = () => {
 
     const { data, loading, error } = useGetCryptoList()
 
-
-
-    useEffect(() => { console.log(data); setCryptos(data) }, [data])
-
+    useEffect(() => { setCryptos(data) }, [data])
 
     return (
-        <div>
-
-            <CryptoCurrencyListFilters data={data} setCryptos={setCryptos} />
-            
+        <div>       
             {
                 loading ?
                     <CryptoCurrencyRowLoader />
                 :
                 error ?
                     <p>Error</p>
-                :
-                    cryptos.map(crypto => <CryptoCurrencyListRow key={crypto.id} {...crypto} />)      
+                :  
+                    <>
+                        <CryptoCurrencyListFilters data={data} setCryptos={setCryptos} />
+                        {cryptos.map(crypto => <CryptoCurrencyListRow key={crypto.id} {...crypto} />)}    
+                    </>               
             }
-
         </div>
     )
 }

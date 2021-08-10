@@ -1,4 +1,6 @@
-import React from 'react'
+/**
+ * cryptoCurrencyRow component loader
+ */
 import styles  from '../../assets/styles/CryptoCurrencyListRow.module.css'
 import SkeletonLoader from "tiny-skeleton-loader-react";
 
@@ -13,13 +15,11 @@ export const CryptoCurrencyRowLoader = () => {
                 return(
                     <div  className={styles.currency_row} key={loader}>
                     <div className={styles.currency_row_leftSection}> 
-                        <span className={styles.indicative}><SkeletonLoader width="15px" height="18px"/></span>
-                        
+                        <span className={styles.indicative}><SkeletonLoader width="15px" height="18px"/></span>               
                         <div>
                             <h4 className={styles.currency_row_title}> <SkeletonLoader width="100px" height="18px"/></h4>
                             <p className={styles.currency_row_symbol}><SkeletonLoader width="50px" height="18px"/></p>
-                        </div>
-                       
+                        </div>         
                     </div>
                     <div>
                         <p className={styles.currency_row_price}><SkeletonLoader width="100px" height="18px"/></p>

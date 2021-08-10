@@ -1,4 +1,6 @@
-import React from 'react'
+/**
+ * the general layout of the application contains the header and receives the child as a body
+ */
 import styles from '../../assets/styles/Layout.module.css'
 
 export const Layout = ({ children }: any) => {
@@ -10,9 +12,7 @@ export const Layout = ({ children }: any) => {
 
             <div className={styles.layout_body}>
                 {children}
-            </div>
-
-            
+            </div>       
         </div>
     )
 }
