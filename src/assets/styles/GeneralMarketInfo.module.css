@@ -34,7 +34,7 @@
 
 @media (max-width: 650px){
     .general_market_info_detailContainer{
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .general_market_info_detail{

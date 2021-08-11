@@ -7,6 +7,13 @@
     
 }
 
+@media (max-width: 600px){
+    .currencyList_filtersContainer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 /* SEARCHER */
 .currencyList_searcher{
     display: flex;
@@ -18,6 +25,12 @@
     height: 35px;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 600px){
+    .currencyList_searcher{
+        margin-bottom: 10px;
+    }
 }
 
 .currencyList_searcher_input{
